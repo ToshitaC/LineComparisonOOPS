@@ -9,6 +9,8 @@ public class LineComparisonOOPS {
         System.out.println("Welcome to Line comparison OOPS program !!");
         input();
         distance();
+        equality();
+
     }
 
     public static void input() {
@@ -40,5 +42,14 @@ public class LineComparisonOOPS {
 
         double distance = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
         System.out.println("Distance = " + distance);
+    }
+
+    public static void equality() {
+        if (distance1 == distance2)
+            System.out.print("Length are same ");
+        else if (distance1 > distance2)
+            System.out.print(" distance1 is greater ");
+        else
+            System.out.println("distance2 is greater");
     }
 }
